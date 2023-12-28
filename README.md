@@ -61,3 +61,60 @@
 
 - Balancing the benefits of ICMP with robust security measures is crucial for administrators to ensure network integrity and resilience against potential threats.
 
+---
+
+## Tools
+
+- To better comprehend certain concepts and facilitate specific activities, I've developed some tools in **C#** and **PowerShell** to enhance the understanding of **Ping Sweep** and **ICMP Exfiltration**.
+
+### [Psweep](https://github.com/h0ru/icmp-quickhacks/tree/main/psweep) ~ Cross-platform Ping Sweep utility developed in C# and available in .NET 4.0 and 6.0.
+### [ICMP-Exfil](https://github.com/h0ru/icmp-quickhacks/tree/main/icmp-exfil) ~ ICMP Exfiltration tool available in .NET 4.0 and PowerShell
+
+### ❓ How to Download & Use
+
+#### `PSweep` 
+
+- First check the .NET Framework versions available
+```
+reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP"
+```
+- .NET 4.0
+  - Only Windows
+```
+wget https://raw.githubusercontent.com/h0ru/icmp-quickhacks/main/psweep/psweepx.cs -O psweepx.cs
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe .\psweepx.cs
+```
+- .Net 6.0
+  - Linux
+```
+dotnet new console --language C# -o psweep
+cd psweep
+wget https://raw.githubusercontent.com/h0ru/icmp-quickhacks/main/psweep/Program.cs
+dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained true
+```
+- .Net 6.0
+  - Windows
+```
+dotnet new console --language C# -o psweep
+cd psweep
+wget https://raw.githubusercontent.com/h0ru/icmp-quickhacks/main/psweep/Program.cs -O Program.cs
+dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained true
+```
+
+#### `ICMP-Exfil`
+- First check the .NET Framework versions available
+```
+reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP"
+```
+- .NET 4.0
+  - Only Windows
+```
+wget https://raw.githubusercontent.com/h0ru/icmp-quickhacks/main/icmp-exfil/icmp-exfil.cs -O icmp-exfil.cs
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe .\icmp-exfil.cs
+```
+- Powershell Module
+```
+powershell -ep bypass
+iex(iwr https://raw.githubusercontent.com/h0ru/icmp-quickhacks/main/icmp-exfil/icmp-exfil.psm1)
+Invoke-ICMPExfil
+```
