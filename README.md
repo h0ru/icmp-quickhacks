@@ -9,8 +9,9 @@
    * [`4. Man-In-The-Middle (MITM) Attacks`](#4-man-in-the-middle-mitm-attacks)
 * [`Tools`](#tools)
    * [`How to Download & Use`](#-how-to-download--use)
-   * [`PSweep`](https://github.com/h0ru/icmp-quickhacks#psweep)
-   * [`ICMP-Exfil`](https://github.com/h0ru/icmp-quickhacks?tab=readme-ov-file#icmp-exfil)
+   * [`PSweep`](#psweep)
+   * [`ICMP-Exfil`](#icmp-exfil)
+   * [`How to Use`](https://github.com/h0ru/icmp-quickhacks/wiki/How-to-use%3F)
   
 ---
 
