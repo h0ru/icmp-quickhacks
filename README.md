@@ -1,6 +1,12 @@
 # (⚡) ICMP Qu1ck-H4cks
 * [`Introduction`](#introduction)
+  * [`ICMP Type Number`](#icmp-type-number)
+  * [`ICMP Structure`](#icmp-structure)
 * [`Security`](#security)
+   * [`1. Footprinting`](#1-footprinting)
+   * [`2. Denial of Service (DoS)`](#2-denial-of-service-dos)
+   * [`3. Tunneling`](#3-tunneling)
+   * [`4. Man-In-The-Middle (MITM) Attacks`](#4-man-in-the-middle-mitm-attacks)
 * [`Tools`](#tools)
   
 ---
@@ -36,7 +42,7 @@
 ### 1. Footprinting
 - ICMP is exploited for footprinting, gathering information about targets.
 - [⚔️] Ping sweeps identify live hosts, and router discovery is achieved using Solicitation messages.
--[🛡️] Blocking ICMP entirely hinders footprinting but complicates troubleshooting. A compromise is to block ICMP from untrusted networks.
+- [🛡️] Blocking ICMP entirely hinders footprinting but complicates troubleshooting. A compromise is to block ICMP from untrusted networks.
 
 ### 2. Denial of Service (DoS)
 - Unreachable messages can be spoofed to trick hosts into closing connections.
