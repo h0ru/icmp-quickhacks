@@ -12,6 +12,7 @@
    * [`PSweep`](#psweep)
    * [`ICMP-Exfil`](#icmp-exfil)
    * [`How to Use`](https://github.com/h0ru/icmp-quickhacks/wiki/How-to-use%3F)
+   * [`Obtaining the Exfiltrated Content`](https://github.com/h0ru/icmp-quickhacks/wiki/Obtaining-the-exfiltrated-content)
   
 ---
 
