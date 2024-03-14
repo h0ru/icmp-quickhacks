@@ -63,5 +63,3 @@ function sweep {
     Write-Host ""
     Write-Host "Finished!"
 }
-
-sweep $args[0]
